@@ -10,6 +10,8 @@ import {
   Separator,
 } from '@/components/ui';
 
+import DevbarMenu from './Devbar/DevbarMenu';
+
 const Navbar = () => {
   const { setToken } = useAuth();
 
@@ -34,6 +36,7 @@ const Navbar = () => {
             <DropdownMenuTrigger asChild>
               <Link>Account</Link>
             </DropdownMenuTrigger>
+            <DevbarMenu />
             <DropdownMenuContent align='end'>
               <DropdownMenuItem onClick={handleSignOut}>
                 Sign Out
